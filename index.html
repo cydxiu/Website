@@ -109,9 +109,10 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 2rem; /* Add space below the image */
       width: 180px;
       max-width: 40vw;
-      margin-right: 20px;
+      /* Remove margin-right so text doesn't overlap */
       border-radius: 10px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(0,0,0,0.12);
       border: 4px solid #fff;
@@ -241,17 +242,9 @@
   </header>
 
   <section class="hero">
-    <!-- Container to hold image and heading side by side -->
-    <!-- Responsive flex container for image and heading -->
-    <div class="hero-flex">
-      <!-- The new image showing clean water efforts -->
-      <!-- Make sure this image is in the img/ folder -->
-      <!-- Add a shadow and border to give the image more dimension -->
-      <img src="img/CharityWaterLady.png" alt="Clean water efforts" class="hero-img">
-      <!-- The heading next to the image -->
-      <h2 style="margin: 0; color: white;">Every Drop Counts</h2>
-    </div>
-    <!-- Campaign description below the image and heading -->
+    <!-- Show image above the heading, not side by side -->
+    <img src="img/CharityWaterLady.png" alt="Clean water efforts" class="hero-img">
+    <h2 style="margin: 0; color: white;">Every Drop Counts</h2>
     <p>Your support can help fund water projects that transform lives. Let’s work together to end the water crisis.</p>
     <button class="cta-button" onclick="launchConfetti()">Donate Now</button>
   </section>
